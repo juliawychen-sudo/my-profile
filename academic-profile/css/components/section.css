@@ -9,11 +9,11 @@
 .entry-date span { font-size: 9px; font-weight: 400; }
 .entry-role { margin-top: 6px; color: var(--accent); font-size: 12px; }
 .entry-role + p { margin-top: 8px; color: var(--muted); font-size: 13px; }
-.earlier-experience { margin-top: 28px; }
-.earlier-experience summary { display: flex; justify-content: space-between; padding: 13px 0; color: var(--accent); cursor: pointer; list-style: none; font-size: 12px; font-weight: 600; }
-.earlier-experience summary::-webkit-details-marker { display: none; }
-.earlier-experience[open] summary { margin-bottom: 20px; }
-.earlier-experience[open] summary span { transform: rotate(45deg); }
+:is(.earlier-experience, .earlier-education) { margin-top: 28px; }
+:is(.earlier-experience, .earlier-education) summary { display: flex; justify-content: space-between; padding: 13px 0; color: var(--accent); cursor: pointer; list-style: none; font-size: 12px; font-weight: 600; }
+:is(.earlier-experience, .earlier-education) summary::-webkit-details-marker { display: none; }
+:is(.earlier-experience, .earlier-education)[open] summary { margin-bottom: 20px; }
+:is(.earlier-experience, .earlier-education)[open] summary span { transform: rotate(45deg); }
 .skills-list { margin: 0; }
 .skills-list div { display: grid; grid-template-columns: 125px minmax(0, 1fr); gap: 20px; }
 .skills-list div + div { margin-top: 18px; }

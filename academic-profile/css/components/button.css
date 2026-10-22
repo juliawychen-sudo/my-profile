@@ -1,0 +1,10 @@
+/* Base class controls shape; variants control color. */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 11px 19px; border: 1px solid transparent; border-radius: 3px; font-family: inherit; font-size: 12px; font-weight: 700; line-height: 1.5; text-align: center; cursor: pointer; }
+.btn:hover { text-decoration: none; }
+.btn-primary { color: white; background: var(--accent); }
+.btn-primary:hover { background: #174954; }
+.btn-secondary { color: var(--ink); border-color: #bac8cf; background: transparent; }
+.btn-secondary:hover { background: #e8eff1; }
+.btn-light { color: white; border-color: #8eabb8; background: transparent; }
+.btn-light:hover { background: #ffffff12; }
+.button-group { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }

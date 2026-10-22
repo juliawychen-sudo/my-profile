@@ -1,0 +1,9 @@
+.avatar { display: block; width: 88px; height: 88px; border-radius: 50%; object-fit: cover; object-position: center 28%; }
+.profile-sidebar { align-self: start; }
+.sidebar-name { margin-top: 18px; font-size: 15px; font-weight: 700; }
+.sidebar-detail { margin-top: 8px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.sidebar-label { margin-top: 30px; color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: 1.5px; }
+.interest-list { margin-top: 8px; font-size: 13px; line-height: 2; }
+.sidebar-link { display: block; margin-top: 20px; }
+.sidebar-link + .sidebar-link { margin-top: 8px; }
+@media (max-width: 760px) { .profile-sidebar { display: none; } }

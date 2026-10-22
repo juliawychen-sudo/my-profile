@@ -1,0 +1,39 @@
+.section { padding-bottom: 48px; margin-bottom: 44px; border-bottom: 1px solid var(--line); }
+.section-heading { display: flex; align-items: baseline; gap: 16px; margin-bottom: 27px; }
+.section-number { flex-shrink: 0; color: var(--accent); font-size: 10px; letter-spacing: 1px; }
+.introduction p, .section-intro { color: var(--muted); }
+.section-intro { margin: -8px 0 28px; font-size: 13px; }
+.entry { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 20px; }
+.entry + .entry { margin-top: 30px; }
+.entry-date { padding-top: 1px; color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: 0.5px; }
+.entry-date span { font-size: 9px; font-weight: 400; }
+.entry-role { margin-top: 6px; color: var(--accent); font-size: 12px; }
+.entry-role + p { margin-top: 8px; color: var(--muted); font-size: 13px; }
+.earlier-experience { margin-top: 28px; }
+.earlier-experience summary { display: flex; justify-content: space-between; padding: 13px 0; color: var(--accent); cursor: pointer; list-style: none; font-size: 12px; font-weight: 600; }
+.earlier-experience summary::-webkit-details-marker { display: none; }
+.earlier-experience[open] summary { margin-bottom: 20px; }
+.earlier-experience[open] summary span { transform: rotate(45deg); }
+.skills-list { margin: 0; }
+.skills-list div { display: grid; grid-template-columns: 125px minmax(0, 1fr); gap: 20px; }
+.skills-list div + div { margin-top: 18px; }
+.skills-list dt { font-size: 12px; font-weight: 600; }
+.skills-list dd { margin: 0; color: var(--muted); font-size: 13px; }
+.contact-panel { padding: 30px; background: var(--soft); border-left: 3px solid var(--accent); }
+.contact-panel .eyebrow { color: var(--accent); }
+.contact-panel h2 { margin-top: 12px; font-size: 27px; }
+.contact-email { display: inline-block; margin-top: 14px; font-size: 14px; overflow-wrap: anywhere; }
+.contact-panel .button-group { margin-top: 24px; }
+.contact-panel .contact-tools { margin-top: 14px; gap: 10px; }
+.contact-panel .copy-status { margin-top: 8px; color: var(--muted); font-size: 12px; }
+.copy-status:empty { display: none; }
+.typeform-panel { margin-top: 36px; }
+.typeform-panel > p { margin-top: 12px; color: var(--muted); }
+.typeform-panel iframe { display: block; width: 100%; height: 560px; margin-block: 24px 12px; border: 1px solid var(--line); border-radius: 3px; }
+@media (max-width: 900px) { .entry { grid-template-columns: minmax(0, 1fr); gap: 7px; } }
+@media (max-width: 600px) {
+  .section { padding-bottom: 34px; margin-bottom: 34px; }
+  .section-heading { gap: 12px; }
+  .skills-list div { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .contact-panel { padding: 24px 20px; }
+}

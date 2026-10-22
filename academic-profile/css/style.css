@@ -1,0 +1,47 @@
+/* One stylesheet in HTML; component files are imported here. */
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/navigation.css");
+@import url("components/section.css");
+@import url("components/card.css");
+@import url("components/footer.css");
+
+:root {
+  --ink: #172d3b;
+  --muted: #596771;
+  --accent: #235f6b;
+  --paper: #ffffff;
+  --soft: #f3f6f7;
+  --line: #dce3e6;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.8; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { line-height: 1.2; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+h2 { font-size: 30px; letter-spacing: -0.7px; }
+h3 { font-size: 17px; font-weight: 600; }
+a { color: var(--accent); text-decoration: none; text-underline-offset: 4px; }
+a:hover { text-decoration: underline; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #b47431; outline-offset: 5px; }
+p + p { margin-top: 14px; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 1.6px; }
+.plain-list { margin: 0; padding: 0; list-style: none; }
+.text-link { font-size: 13px; font-weight: 600; }
+.skip-link { position: absolute; left: 16px; top: -100px; z-index: 10; padding: 10px 18px; background: white; }
+.skip-link:focus { top: 10px; }
+.demo-section { padding: 40px 0; border-bottom: 1px solid var(--line); }
+.demo-section h2 { margin-bottom: 22px; }
+.demo-caption { margin-bottom: 16px; color: var(--muted); }
+.demo-avatar { display: flex; gap: 20px; align-items: center; }
+.demo-banner { margin-top: 32px; }
+.demo-banner .banner-inner { padding: 72px 32px; }
+.demo-banner h2 { color: white; font-size: 38px; }
+.demo-banner .button-group { margin-top: 22px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (max-width: 600px) { body { font-size: 14px; } h2 { font-size: 27px; } }

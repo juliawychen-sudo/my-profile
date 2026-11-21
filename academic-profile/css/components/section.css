@@ -27,9 +27,6 @@
 .contact-panel .contact-tools { margin-top: 14px; gap: 10px; }
 .contact-panel .copy-status { margin-top: 8px; color: var(--muted); font-size: 12px; }
 .copy-status:empty { display: none; }
-.typeform-panel { margin-top: 36px; }
-.typeform-panel > p { margin-top: 12px; color: var(--muted); }
-.typeform-panel iframe { display: block; width: 100%; height: 560px; margin-block: 24px 12px; border: 1px solid var(--line); border-radius: 3px; }
 @media (max-width: 900px) { .entry { grid-template-columns: minmax(0, 1fr); gap: 7px; } }
 @media (max-width: 600px) {
   .section { padding-bottom: 34px; margin-bottom: 34px; }
